@@ -172,3 +172,11 @@ class TestApp():
         xxx'''
 
         #notifications_function
+
+        el1 = self.driver.find_element(by=AppiumBy.XPATH, value="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ImageView[2]")
+        el1.click()
+        el2 = self.driver.find_element(by=AppiumBy.XPATH, value="com.netdatasoft.android.divvydrive:id/bildirim_sil")
+        el2.click()
+        el3 = self.driver.find_element(by=AppiumBy.XPATH, value="com.netdatasoft.android.divvydrive:id/clear_all")
+        el3.click()
+        self.driver.back()
