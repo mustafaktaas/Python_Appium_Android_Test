@@ -114,6 +114,23 @@ class TestAppLocal():
 
         print("\nÇoklu Seçme Taşıma Silme İşlevleri Başarılı!!!")
 
+        element = self.driver.find_element(by=AppiumBy.XPATH,
+                                           value="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[5]/android.widget.RelativeLayout")
+        action = TouchAction(self.driver)
+        action.long_press(element, duration=1000).perform()
+
+        self.find_click_action(
+            "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[6]/android.widget.RelativeLayout")
+
+        self.find_click_action(
+            "//android.widget.ImageView[@content-desc='Diğer seçenekler']")
+
+        self.find_click_action(
+            "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.LinearLayout")
+        time.sleep(2)
+
+        print("\nÇoklu İndirme İşlevi Başarılı!!!")
+
 
     def find_click_action(self, xpath):
         click = self.driver.find_element(by=AppiumBy.XPATH, value=xpath)
