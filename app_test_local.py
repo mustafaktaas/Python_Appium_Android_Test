@@ -96,6 +96,11 @@ class TestAppLocal():
 
         print("\n Sesleri açma İşlevleri Başarılı!!!")
 
+        # E-Mail İşlevleri
+
+
+        print("\n E-Mail İşlevleri Başarılı!!!")
+
 
     def find_click_action(self, xpath):
         click = self.driver.find_element(by=AppiumBy.XPATH, value=xpath)
