@@ -1447,7 +1447,7 @@ class TestApp():
         self.driver.back()
         time.sleep(0.300)
 
-        print("\n E-Mail İşlevleri Başarılı!!!")
+        print("\n E-Mail İşlevleri Başarılıı!!!")
 
     def find_click_action(self, xpath):
         el3 = self.driver.find_element(by=AppiumBy.XPATH, value=xpath)
