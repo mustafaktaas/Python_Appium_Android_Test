@@ -170,7 +170,7 @@ class TestAppLocal():
         time.sleep(0.300)
 
         print("\n E-Mail İşlevleri Başarılı!!!")
-        print("\n E-Mail İşlevleri Başarılıı!!!")
+        print("\n E-Mail İşlevleri Başarılııı!!!")
 
 
     def find_click_action(self, xpath):

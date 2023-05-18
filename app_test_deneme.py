@@ -15,7 +15,7 @@ class TestApp():
         desired_cap = {
             "platformName": "android",
             "deviceName": "emulator-5554",
-            "app": "C:\\Appium\\app-release.apk"
+            "app": "C:\\Appium\\app-release3.apk"
         }
 
         driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_cap)
@@ -67,7 +67,7 @@ class TestApp():
                             value="//android.widget.FrameLayout[@content-desc='Duvarım']/android.widget.FrameLayout/android.widget.ImageView").click()
         time.sleep(0.300)
 
-        print("\nProfil Fotografı Başarılı!!!\n")
+        print("\nProfil Fotografı Başarılıı!!!\n")
 
         # search_function
 
